@@ -8,7 +8,7 @@
  * Licensed under the GNU GPL. For full terms see the file COPYING that came
  * with the Squirrelmail distribution.
  *
- * $Id: constants.php,v 1.9 2004/05/17 14:37:54 avel Exp $
+ * $Id: constants.php,v 1.9.2.1 2004/11/22 13:01:19 avel Exp $
  */
 
 $types = array();
@@ -186,10 +186,10 @@ $spamrule_actions = array(
 /* Version Info for SIEVE scripts */
 
 $avelsieve_version = array(
-	'major' => 0,
-	'minor' => 9,
-	'release' => 10,
-	'string' => "0.9.11"
+	'major' => 1,
+	'minor' => 0,
+	'release' => 0,
+	'string' => "1.0.0"
 );
 
 global $implemented_capabilities, $cap_dependencies;  
