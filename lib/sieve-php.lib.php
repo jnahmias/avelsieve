@@ -2,7 +2,7 @@
 /**
  * sieve-php.lib.php
  *
- * $Id: sieve-php.lib.php,v 1.4 2003/12/18 14:08:28 avel Exp $ 
+ * $Id: sieve-php.lib.php,v 1.4.2.1 2004/12/06 17:22:05 avel Exp $ 
  *
  * Copyright 2001-2003 Dan Ellis <danellis@rushmore.com>
  *
@@ -137,7 +137,7 @@ class sieve {
             $this->error_raw[]=substr($this->line, 0, strlen($this->line) -2);    //we want to be nice and strip crlf's
             $this->err_recv = strlen($this->line);
 
-            while($this->err_recv < $this->err_len){
+            while($this->err_recv < $this->err_len-1){
                 //print "<br>Trying to receive ".($this->err_len-$this->err_recv)." bytes for result<br>";
                 $this->line = fgets($this->fp, ($this->err_len-$this->err_recv));
                 $this->error_raw[]=substr($this->line, 0, strlen($this->line) -2);    //we want to be nice and strip crlf's
