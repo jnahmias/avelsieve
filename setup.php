@@ -11,7 +11,7 @@
  *
  * Also view plugins/README.plugins for more information.
  *
- * $Id: setup.php,v 1.14 2004/07/27 16:32:33 avel Exp $
+ * $Id: setup.php,v 1.12 2004/05/17 14:37:54 avel Exp $
  */
    
 // require_once('../functions/i18n.php');
@@ -61,7 +61,7 @@
 		bindtextdomain('avelsieve', SM_PATH . 'plugins/avelsieve/locale');
 	        textdomain ('avelsieve');
 
-   		displayInternalLink('plugins/avelsieve/table.php',_("Filters"));
+   		displayInternalLink('plugins/avelsieve/table.php',_("Filters"),'right');
 		echo "&nbsp;&nbsp\n";
 
 		bindtextdomain('squirrelmail', SM_PATH . 'locale');
@@ -70,7 +70,7 @@
    }    
 
 function avelsieve_version() {
-	return '0.9.12cvs';
+	return '0.9.11';
 }
  
 /* function avelsieve_set_loadinfo() {
