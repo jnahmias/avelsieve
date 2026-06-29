@@ -31,6 +31,7 @@ class DO_Sieve_ManageSieve extends DO_Sieve {
     var $sievePreferredSaslMech;
     var $sieveImapProxyMode;
     var $sieveCyrusAdminsMap;
+    var $disableTls;
 
     function DO_Sieve_ManageSieve() {
         global $sieve_capabilities;
@@ -138,7 +139,7 @@ class DO_Sieve_ManageSieve extends DO_Sieve {
     
             if(AVELSIEVE_DEBUG > 0) {
                 print "<pre>(Debug Mode). Login failed. Capabilities:\n";
-                print_r($this->sieve_capabilities);
+                print_r($this->capabilities);
                 if(!empty($this->sieve->error)) {
                     print "\nError Message returned:\n";
                     print_r($this->sieve->error);
